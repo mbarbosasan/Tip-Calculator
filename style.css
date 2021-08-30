@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap');
+
+
+/* COLOR VARIABLES */
+:root {
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --darkGrayishCyan2:  hsl(184, 14%, 56%);
+  --lightGrayishCyan:  hsl(185, 41%, 84%);
+  --lightGrayishCyan2: hsl(189, 41%, 97%);
+  --strongCyan: hsl(172, 67%, 45%);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero {
+  background-color: var(--lightGrayishCyan);
+  width: 100vw;
+  height: 25vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body > .main-container, body > .button-container, body > .result-div {
+  color: var(--darkGrayishCyan);
+}
+
+input {
+  border-style: none;
+  font-family: 'Space Mono', monospace;
+  text-align: right;
+  font-size: 24px;
+  width: 100%;
+  color: var(--veryDarkCyan);
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.dollar-input {
+  background-image: url(./images/icon-dollar.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.person-input {
+  background-image: url(./images/icon-person.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+input::placeholder {
+  text-align: left;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  border-radius: 10px;
+  font-family: 'Space Mono', monospace;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button-container > button {
+  width: 40vw;
+  height: 5vh;
+  background-color: var(--veryDarkCyan);
+  font-family: 'Space Mono', monospace;
+  border-radius: 3px;
+  border-width: 0px;
+  color: white;
+  font-size: 1rem;
+}
+
+.button-container > button:nth-last-child(1) {
+  color: var(--darkGrayishCyan);
+  background-color: var(--lightGrayishCyan2);
+}
+
+button.active {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+
+.result-div {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  background: var(--veryDarkCyan);
+  border-radius: 10px;
+  border-width: 0px;
+  color: white;
+}
+
+.result-div p {
+  color: white;
+}
+
+.result-div > .person {
+  color: var(--lightGrayishCyan2);
+}
+
+.result-div p:nth-child(5) {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+
+.result-div p:nth-child(6) {
+  grid-column: 2;
+  grid-row: 3 / 5;
+}
+
+.result-div > button {
+  grid-column: 1 / 3;
+  display: flex;
+  width: 80vw;
+  border-radius: 3px;
+  border-width: 0px;
+  height: 5vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  background-color: hsl(172, 67%, 45%);
+  color: var(--veryDarkCyan);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
