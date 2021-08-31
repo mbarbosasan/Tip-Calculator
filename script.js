@@ -1,5 +1,5 @@
-const bill = document.querySelector('.dollar-input'); 
-const people = document.querySelector('.person-input')
+const bill = document.querySelector('.bill-value'); 
+const people = document.querySelector('.input-value')
 const buttons = document.querySelectorAll('button');
 const tipValue = document.querySelector('.tipTotalValue')
 const finalValue = document.querySelector('.totalValue')

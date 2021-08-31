@@ -16,35 +16,33 @@
 </head>
 
 <body>
-  <div class='hero'>
-    <img src="./images/logo.svg">
-  </div>
-  <form>
-    <div class="main-container">
-      <p> Bill </p>
-      <input type="number" class="dollar-input">
-      <p>Select tip %</p>
-      <div class="button-container">
-        <button type="button" value="0.05" class="active"> 5% </button>
-        <button type="button" value="0.10"> 10%</button>
-        <button type="button" value="0.15"> 15% </button>
-        <button type="button" value="0.25"> 25% </button>
-        <button type="button" value="0.50"> 50% </button>
-        <button type=""> Custom </button>
-      </div>
-      <p>Number of People</p>
-    </div>
-    <input type="number" min="0" class="person-input">
-    <div class="result-div">
-      <p> Tip Amount </p>
-      <p class="person"> / person </p>
-      <p> Total </p>
-      <p class="person"> / person</p>
-      <p class="tipTotalValue"> TIP TOTAL </p>
-      <p class="totalValue"> TOTAL VALUE</p>
-      <button> RESET </button>
+  <img src="./images/logo.svg">
+  <form class="forms-container">
+    <section class="options-container">
+      <p>Bill</p>
+        <input class="bill-value" type='number'>
+      <p>Select Tip %</p>
+        <section class="button-container">
+          <button type='button' value="0.05" class="active">5%</button>
+            <button type='button' value="0.10">10%</button>
+              <button type='button' value="0.15">15%</button>
+                <button type='button' value="0.25">25%</button>
+                  <button type='button' value="0.50">50%</button>
+                    <button type='button'>Custom</button>
+        </section>
+        <p>Number of People</p>
+          <input class="input-value">
+    </section>
+    <section class="result-container">
+      <p>Tip Amount</p>
+        <p>/ Person</p>
+          <p class="tipTotalValue">TIP TOTAL</p>
+      <p>Value Total</p>
+        <p>/ Person</p>
+          <p class="totalValue">TOTAL VALUE</p>
+          <button type="reset">RESET</button>
+     </section>
   </form>
-  </div>
   <script type="text/javascript" src="script.js"></script>
 </body>
 
