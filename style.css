@@ -92,13 +92,7 @@ button.active {
   text-align: right;
   border-width: 0px;
   font-weight: 700;
-  /* outline: 1px --strongCyan; */
   color: var(--veryDarkCyan);
-}
-
-input:invalid {
-  border-width: 1px;
-  border-color: red;
 }
 
 .options-container > input:nth-child(2) {
@@ -160,7 +154,7 @@ input:invalid {
 
 .result-container > p:nth-child(6) {
   grid-column: 2;
-  grid-row: 2/ 5;
+  grid-row: 1 / 5;
   font-size: 1.5rem;
   color: var(--strongCyan);
 }
@@ -183,6 +177,10 @@ input:invalid {
   height: 35px;
   cursor: pointer;
 } 
+
+.reset-button.inactive {
+  background-color: hsl(186, 40%, 43%);
+}
 
 /* MOBILE DESIGN */
 @media (max-width: 900px) {

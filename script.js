@@ -4,9 +4,14 @@ const buttons = document.querySelectorAll('button');
 const tipValue = document.querySelector('.tipTotalValue')
 const finalValue = document.querySelector('.totalValue')
 const inputValue = document.querySelector('.percentage-manual')
+const resetButton = document.querySelector('.reset-button');
+
+console.log(resetButton);
 
 function disableButton() {
-  
+  if (people.value == 0 || people.value == null) {
+    resetButton.classList.add('inactive');
+  }
 }
 
 buttons.forEach((item, index) => {
@@ -28,9 +33,8 @@ function tipCalculator() {
   buttons.forEach((item) => {
     if (item.className === 'active') {
       if (item.value === '0') {
-
       }
-      // var buttonActive = item.value;
+        resetButton.classList.remove('inactive');
         let tipTotal = (parseFloat(inputValue.value / 100) + parseFloat(item.value / 100)) * parseFloat(bill.value)
         / parseFloat(people.value);
         let totalValue = (parseFloat(bill.value) / parseFloat(people.value)) + parseFloat(tipTotal);
