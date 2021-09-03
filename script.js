@@ -31,7 +31,7 @@ function tipCalculator() {
 
       }
       // var buttonActive = item.value;
-        let tipTotal = parseFloat(bill.value) * (parseFloat(inputValue.value / 100)) + parseFloat(item.value / 100)
+        let tipTotal = (parseFloat(inputValue.value / 100) + parseFloat(item.value / 100)) * parseFloat(bill.value)
         / parseFloat(people.value);
         let totalValue = (parseFloat(bill.value) / parseFloat(people.value)) + parseFloat(tipTotal);
         tipValue.innerHTML = '$' + tipTotal.toFixed(2);
@@ -39,3 +39,5 @@ function tipCalculator() {
     }
   })
 }
+
+console.log(inputValue.value);
