@@ -26,15 +26,14 @@ body {
 /* DESKTOP DESIGN */
 /* CONFIG DE POSICIONAMENTO E FONTES */ 
 .forms-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 50px;
   width: 40vw;
   background-color: white;
   border-radius: 10px;
-  display: grid;
   padding-left: 30px;
   padding-top: 10px;
-  /* padding-top: 10px; */
-  grid-template-columns: repeat(2, 1fr);
   color: var(--darkGrayishCyan);
   font-weight: 700;
   box-shadow: inset;
@@ -114,9 +113,9 @@ button.active {
   justify-content: center;
   align-items: center;
   padding-left: 20px;
-  background-color: var(--veryDarkCyan);
   margin: 20px;
   border-radius: 10px;
+  background-color: var(--veryDarkCyan);
 }
 
 .result-container > p:nth-child(1), .result-container > p:nth-child(4) {
