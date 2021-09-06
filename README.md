@@ -38,10 +38,12 @@ Usuário deverão ser capaz de:
 ### Screenshot
 
 Desktop Preview
-![](./design/desktoppreview.png)
+
+![Desktop Preview](./design/desktoppreview.png)
 
 Mobie Preview:
-![](./design/mobilepreview.png)
+
+![Mobile Preview](./design/mobilepreview.png)
 
 
 ### Links
@@ -58,7 +60,7 @@ Mobie Preview:
 - CSS Grid;
 - JavaScript Vanilla;
 
-### O que eu aprendi:
+### O que eu aprendi
 
 A princípio eu tentei fazer através da técnica de mobile-first onde ficaria mais fácil de posicionar os elementos conforme a tela for crescendo e de início realmente ficou bem simples o processo e consegui fazer de forma bem rápida, no entanto, conforme foi chegando aos ultimos detalhes com o CSS acabei encontrando alguns problemas e tive que ir refatorando todo o HTML e, consequentemente, todo o CSS um pouco frustante mas consegui aprender com meus erros do início XD.
 
