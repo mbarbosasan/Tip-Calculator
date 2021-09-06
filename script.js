@@ -43,5 +43,3 @@ function tipCalculator() {
     }
   })
 }
-
-console.log(inputValue.value);
