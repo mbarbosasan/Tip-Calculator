@@ -48,8 +48,8 @@ Mobie Preview:
 
 ### Links
 
-- Solution URL: [Here](https://github.com/Tokenph/Tip-Calculator)
-- Live Site URL: [Here](https://tokenph.github.io/Tip-Calculator/)
+- Solution URL: [Here](https://github.com/mbarbosasan/Tip-Calculator)
+- Live Site URL: [Here](https://mbarbosasan.github.io/Tip-Calculator/)
 
 ## Meu processo
 
